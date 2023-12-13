@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "768687018055",
+    "project_id": "nitmhub",
+    "storage_bucket": "nitmhub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768687018055:android:a682540633fec0bd526162",
+        "android_client_info": {
+          "package_name": "com.example.nitm_hub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpcr64ouab8dbuRJLC217CrUeBsEqZigQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
