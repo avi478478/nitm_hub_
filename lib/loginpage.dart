@@ -5,6 +5,7 @@ import 'package:nitm_hub/homepage.dart';
 import 'firebase_options.dart';
 import 'registerpage.dart';
 
+// ignore: camel_case_types
 class login extends StatefulWidget {
   const login({super.key});
 
@@ -12,6 +13,7 @@ class login extends StatefulWidget {
   State<login> createState() => loginState();
 }
 
+// ignore: camel_case_types
 class loginState extends State<login> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -34,7 +36,7 @@ class loginState extends State<login> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration:const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/bluecolor.png"),
             fit: BoxFit.cover,
@@ -49,7 +51,7 @@ class loginState extends State<login> {
               color: Colors.white,
             ),
             const SizedBox(height: 10),
-            Center(
+            const Center(
               child: Text(
                 'Please fill in the credentials.',
                 style: TextStyle(color: Colors.white, fontSize: 16),
@@ -57,10 +59,10 @@ class loginState extends State<login> {
             ),
             const SizedBox(height: 20),
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: TextField(
                 controller: _emailController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.white),
                   ),
@@ -73,11 +75,11 @@ class loginState extends State<login> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 10, right: 10),
+              padding:const EdgeInsets.only(left: 10, right: 10),
               child: TextField(
                 controller: _passwordController,
                 obscureText: true,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.white),
                   ),
@@ -97,14 +99,14 @@ class loginState extends State<login> {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
                       fixedSize: const Size(250, 50)),
-                  child: Text('Sign in',
+                  child:const Text('Sign in',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
                           fontSize: 16))),
             ),
             Padding(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -115,7 +117,7 @@ class loginState extends State<login> {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
                       fixedSize: const Size(250, 50)),
-                  child: Text('Sign up',
+                  child: const Text('Sign up',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
